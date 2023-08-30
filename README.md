@@ -86,18 +86,46 @@ ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
 ```
 ## Data Analysis
-List the employee number, last name, first name, sex, and salary of each employee.
+1. List the employee number, last name, first name, sex, and salary of each employee.
+```
+SELECT 
+	employees.emp_no, 
+	employees.last_name, 
+	employees.first_name, 
+	employees.sex, 
+	salaries.salary
+	
+FROM employees
+JOIN salaries
+ON employees.emp_no = salaries.emp_no;
+```
+![Screenshot 2023-08-30 173830](https://github.com/Faith-Hall/sql-challenge/assets/135525815/284074fc-61a2-4b29-a7e4-116d50cdf601)
 
-List the first name, last name, and hire date for the employees who were hired in 1986.
+2. List the first name, last name, and hire date for the employees who were hired in 1986.
+```
 
-List the manager of each department along with their department number, department name, employee number, last name, and first name.
+```
+3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
+```
 
-List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+```
+4. List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+```
 
-List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+```
+5. List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+```
 
-List each employee in the Sales department, including their employee number, last name, and first name.
+```
+6. List each employee in the Sales department, including their employee number, last name, and first name.
+```
 
-List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+```
+7. List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+```
 
-List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+```
+8. List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+```
+
+```
