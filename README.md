@@ -112,6 +112,8 @@ FROM employees
 WHERE hire_date BETWEEN '1/1/1986' AND '12/31/1986'
 ORDER BY hire_date;
 ```
+![Screenshot 2023-08-30 182909](https://github.com/Faith-Hall/sql-challenge/assets/135525815/529077c4-b886-4f6f-8709-b8bbda86494b)
+
 3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
 ```
 SELECT 
