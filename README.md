@@ -99,7 +99,6 @@ FROM employees
 JOIN salaries
 ON employees.emp_no = salaries.emp_no;
 ```
-![Screenshot 2023-08-30 173830](https://github.com/Faith-Hall/sql-challenge/assets/135525815/284074fc-61a2-4b29-a7e4-116d50cdf601)
 
 2. List the first name, last name, and hire date for the employees who were hired in 1986.
 ```
@@ -112,7 +111,6 @@ FROM employees
 WHERE hire_date BETWEEN '1/1/1986' AND '12/31/1986'
 ORDER BY hire_date;
 ```
-![Screenshot 2023-08-30 182909](https://github.com/Faith-Hall/sql-challenge/assets/135525815/529077c4-b886-4f6f-8709-b8bbda86494b)
 
 3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
 ```
