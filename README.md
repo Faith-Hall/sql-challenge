@@ -11,7 +11,8 @@ For this project I taken the six CSV files on employee data from the 1980s and 1
 ---
 ### Data Engineering
 Creating schema tables and for each CSV file: specified data types, relationships, primary keys, and foreign keys
-'''
+
+```
 -- create tables
 CREATE TABLE "departments" (
     "dept_no" char(4)   NOT NULL,
@@ -83,4 +84,4 @@ REFERENCES "titles" ("title_id");
 
 ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
-'''
+```
