@@ -5,7 +5,7 @@ dept_no char(4) PK
 dept_name varchar(36)
 
 
-dep_emp
+dept_emp
 -
 emp_no int PK FK >-< employees.emp_no
 dept_no char(4) PK FK >-< departments.dept_no
